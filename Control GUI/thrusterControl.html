@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="thrusterControlStyles.css">
-    <script src="index.js"></script>
+    <script src="thrusterControl.js"></script>
     <title>SeaFox Inventive Control GUI</title>
 </head>
 <body>
@@ -35,11 +35,33 @@
     <div class="thrustersContainer">
         <img src="images/ROV2.png" alt="">
         <div class="thrustersController">
-            <div class="adjustMotor"></div>
+            <div class="adjustMotor">
+                <div>
+                    <img src="images/Thrusters/leftThruster.png" alt="">
+                </div>                
+                <h1>Bottom-left</h1>
+                <div class="setValues">
+                    <div class="setMaxForwardContainer">
+                        <h2>Max Forward</h2>
+                        <input type="range" name="set Max Forward" id="maxForward" min="0" max="600" value="125">                    
+                        <span class="selectorValues" id="setForwardValue">125</span>
+                    </div>
+                    <div class="setMaxReverseContainer">
+                        <h2>Max Reverse</h2>
+                        <input type="range" name="set Max Forward" id="maxReverse" min="0" max="600" value="125">                    
+                        <span class="selectorValues" id="setReverseValue">125</span>
+                    </div>
+                    <div class="setSteadyContainer">
+                        <h2>Set Steady</h2>
+                        <input type="range" name="set Steady" id="setSteady" min="0" max="600" value="125" onchange="show_setSteady(this.value)">                    
+                        <span class="selectorValues" id="setSteadyValue">125</span>
+                    </div>
+                </div>
+            </div>
 
             <div class="motor" style="grid-column: 1; grid-row: 4;">
                 <div>
-                    <img src="images/Thrusters/leftThruster.jpg" alt="">
+                    <img src="images/Thrusters/leftThruster.png" alt="">
                 </div>                
                 <h1>Top-left</h1>
                 <h2>63%</h2>
@@ -47,7 +69,7 @@
 
             <div class="motor" style="grid-column: 2; grid-row: 4;">
                 <div>
-                    <img src="images/Thrusters/leftThruster.jpg" alt="">
+                    <img src="images/Thrusters/leftThruster.png" alt="">
                 </div>
                 <h1>Top-right</h1>
                 <h2>63%</h2>
@@ -55,7 +77,7 @@
 
             <div class="motor" style="grid-column: 3; grid-row: 4;">
                 <div>
-                    <img src="images/Thrusters/leftThruster.jpg" alt="">
+                    <img src="images/Thrusters/leftThruster.png" alt="">
                 </div>                
                 <h1>Middle-left</h1>
                 <h2>63%</h2>
@@ -63,7 +85,7 @@
 
             <div class="motor" style="grid-column: 1; grid-row: 5;">
                 <div>
-                    <img src="images/Thrusters/leftThruster.jpg" alt="">
+                    <img src="images/Thrusters/leftThruster.png" alt="">
                 </div>                
                 <h1>Middle-right</h1>
                 <h2>63%</h2>
@@ -71,7 +93,7 @@
 
             <div class="motor" style="grid-column: 2; grid-row: 5;">
                 <div>
-                    <img src="images/Thrusters/leftThruster.jpg" alt="">
+                    <img src="images/Thrusters/leftThruster.png" alt="">
                 </div>                
                 <h1>Bottom-left</h1>
                 <h2>63%</h2>
@@ -79,7 +101,7 @@
 
             <div class="motor" style="grid-column: 3; grid-row: 5;">
                 <div>
-                    <img src="images/Thrusters/leftThruster.jpg" alt="">
+                    <img src="images/Thrusters/leftThruster.png" alt="">
                 </div>                
                 <h1>Bottom-right</h1>
                 <h2>63%</h2>

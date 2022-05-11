@@ -202,3 +202,17 @@ body {
     height: 15px;
     border-radius: 100%;
 }
+
+.stopButtonContainer {
+    display: flex;
+    top: 88%;
+    left: 6%;
+    position: absolute;
+}
+
+.stopButtonContainer button {
+    font-size: 2.1rem;
+    padding: 10px 50px;
+    background-color: rgb(231, 0, 0);
+    color: white;
+}
