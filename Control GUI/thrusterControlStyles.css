@@ -133,6 +133,11 @@ body {
     margin: 20px 0 0;
 }
 
+.adjustMotor h2 {
+    margin-right: 10px;
+    width: 35%;
+}
+
 .adjustMotor img {
     grid-column: 1;
     grid-row: 2;
@@ -166,7 +171,8 @@ body {
 }
 
 .setMaxForwardContainer input {
-    width: 98%;
+    width: 280px;
+    background: #3c8097;
 }
 
 .setMaxReverseContainer{
@@ -176,7 +182,7 @@ body {
 }
 
 .setMaxReverseContainer input {
-    width: 98%;
+    width: 280px;
 }
 
 .setSteadyContainer{
@@ -186,7 +192,7 @@ body {
 }
 
 .setSteadyContainer input {
-    width: 98%;
+    width: 280px;
 }
 
 .motor {
@@ -201,6 +207,13 @@ body {
     display: grid;
     justify-content: center;
     overflow: hidden;
+    transition: all ease-in 0.2s;
+    
+}
+
+.motor:hover {
+    width: 95%;
+    cursor: pointer;
 }
 
 .motor div{
